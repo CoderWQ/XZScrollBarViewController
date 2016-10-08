@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06F284C51AFF25D25D4239DD /* libPods-XZScrollBarViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8333B5E12BEDDD7E2EA4A171 /* libPods-XZScrollBarViewController.a */; };
+		F7104EEA1DA8DD4700032859 /* MSYOrderManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7104EE91DA8DD4700032859 /* MSYOrderManagerViewController.m */; };
+		F7104EEE1DA8DF9E00032859 /* UIView+XZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F7104EED1DA8DF9E00032859 /* UIView+XZExtension.m */; };
+		F7104EF11DA8EE2200032859 /* XZTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = F7104EF01DA8EE2200032859 /* XZTopic.m */; };
+		F7104EF71DA8F5B400032859 /* MSYHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7104EF61DA8F5B400032859 /* MSYHeaderView.m */; };
+		F7DD93E01DA8D6F70025C1F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DD93DF1DA8D6F70025C1F1 /* main.m */; };
+		F7DD93E31DA8D6F70025C1F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DD93E21DA8D6F70025C1F1 /* AppDelegate.m */; };
+		F7DD93E91DA8D6F70025C1F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DD93E71DA8D6F70025C1F1 /* Main.storyboard */; };
+		F7DD93EB1DA8D6F70025C1F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DD93EA1DA8D6F70025C1F1 /* Assets.xcassets */; };
+		F7DD93EE1DA8D6F70025C1F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DD93EC1DA8D6F70025C1F1 /* LaunchScreen.storyboard */; };
+		F7DD93F71DA8D7710025C1F1 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DD93F61DA8D7710025C1F1 /* MainTableViewController.m */; };
+		F7F0EE391DA9000C00B3626B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F0EE381DA9000C00B3626B /* MainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8333B5E12BEDDD7E2EA4A171 /* libPods-XZScrollBarViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XZScrollBarViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8607DCBBB9746E74214C62CE /* Pods-XZScrollBarViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XZScrollBarViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XZScrollBarViewController/Pods-XZScrollBarViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		AD36B6A5240C3AE8903AAB7B /* Pods-XZScrollBarViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XZScrollBarViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-XZScrollBarViewController/Pods-XZScrollBarViewController.release.xcconfig"; sourceTree = "<group>"; };
+		F7104EE81DA8DD4700032859 /* MSYOrderManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSYOrderManagerViewController.h; sourceTree = "<group>"; };
+		F7104EE91DA8DD4700032859 /* MSYOrderManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSYOrderManagerViewController.m; sourceTree = "<group>"; };
+		F7104EEC1DA8DF9E00032859 /* UIView+XZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XZExtension.h"; sourceTree = "<group>"; };
+		F7104EED1DA8DF9E00032859 /* UIView+XZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XZExtension.m"; sourceTree = "<group>"; };
+		F7104EEF1DA8EE2200032859 /* XZTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTopic.h; sourceTree = "<group>"; };
+		F7104EF01DA8EE2200032859 /* XZTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTopic.m; sourceTree = "<group>"; };
+		F7104EF51DA8F5B400032859 /* MSYHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSYHeaderView.h; sourceTree = "<group>"; };
+		F7104EF61DA8F5B400032859 /* MSYHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSYHeaderView.m; sourceTree = "<group>"; };
+		F7DD93DB1DA8D6F70025C1F1 /* XZScrollBarViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZScrollBarViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DD93DF1DA8D6F70025C1F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7DD93E11DA8D6F70025C1F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F7DD93E21DA8D6F70025C1F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F7DD93E81DA8D6F70025C1F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7DD93EA1DA8D6F70025C1F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7DD93ED1DA8D6F70025C1F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7DD93EF1DA8D6F70025C1F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DD93F51DA8D7710025C1F1 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		F7DD93F61DA8D7710025C1F1 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		F7F0EE371DA9000C00B3626B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F7F0EE381DA9000C00B3626B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7DD93D81DA8D6F70025C1F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F284C51AFF25D25D4239DD /* libPods-XZScrollBarViewController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80B39B38B284958CF256DFCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8607DCBBB9746E74214C62CE /* Pods-XZScrollBarViewController.debug.xcconfig */,
+				AD36B6A5240C3AE8903AAB7B /* Pods-XZScrollBarViewController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A40ECCE05144CDDCD1F6C29B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8333B5E12BEDDD7E2EA4A171 /* libPods-XZScrollBarViewController.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7104EE41DA8DA2E00032859 /* MSY */ = {
+			isa = PBXGroup;
+			children = (
+				F7F0EE371DA9000C00B3626B /* MainViewController.h */,
+				F7F0EE381DA9000C00B3626B /* MainViewController.m */,
+				F7104EE81DA8DD4700032859 /* MSYOrderManagerViewController.h */,
+				F7104EE91DA8DD4700032859 /* MSYOrderManagerViewController.m */,
+				F7104EEF1DA8EE2200032859 /* XZTopic.h */,
+				F7104EF01DA8EE2200032859 /* XZTopic.m */,
+				F7104EF51DA8F5B400032859 /* MSYHeaderView.h */,
+				F7104EF61DA8F5B400032859 /* MSYHeaderView.m */,
+			);
+			path = MSY;
+			sourceTree = "<group>";
+		};
+		F7104EEB1DA8DF8300032859 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F7104EEC1DA8DF9E00032859 /* UIView+XZExtension.h */,
+				F7104EED1DA8DF9E00032859 /* UIView+XZExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F7DD93D21DA8D6F70025C1F1 = {
+			isa = PBXGroup;
+			children = (
+				F7DD93DD1DA8D6F70025C1F1 /* XZScrollBarViewController */,
+				F7DD93DC1DA8D6F70025C1F1 /* Products */,
+				80B39B38B284958CF256DFCE /* Pods */,
+				A40ECCE05144CDDCD1F6C29B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F7DD93DC1DA8D6F70025C1F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7DD93DB1DA8D6F70025C1F1 /* XZScrollBarViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7DD93DD1DA8D6F70025C1F1 /* XZScrollBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F7104EEB1DA8DF8300032859 /* Category */,
+				F7104EE41DA8DA2E00032859 /* MSY */,
+				F7DD93E11DA8D6F70025C1F1 /* AppDelegate.h */,
+				F7DD93E21DA8D6F70025C1F1 /* AppDelegate.m */,
+				F7DD93F51DA8D7710025C1F1 /* MainTableViewController.h */,
+				F7DD93F61DA8D7710025C1F1 /* MainTableViewController.m */,
+				F7DD93E71DA8D6F70025C1F1 /* Main.storyboard */,
+				F7DD93EA1DA8D6F70025C1F1 /* Assets.xcassets */,
+				F7DD93EC1DA8D6F70025C1F1 /* LaunchScreen.storyboard */,
+				F7DD93EF1DA8D6F70025C1F1 /* Info.plist */,
+				F7DD93DE1DA8D6F70025C1F1 /* Supporting Files */,
+			);
+			path = XZScrollBarViewController;
+			sourceTree = "<group>";
+		};
+		F7DD93DE1DA8D6F70025C1F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7DD93DF1DA8D6F70025C1F1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7DD93DA1DA8D6F70025C1F1 /* XZScrollBarViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DD93F21DA8D6F70025C1F1 /* Build configuration list for PBXNativeTarget "XZScrollBarViewController" */;
+			buildPhases = (
+				88DAFE01F64DC46154D38335 /* [CP] Check Pods Manifest.lock */,
+				F7DD93D71DA8D6F70025C1F1 /* Sources */,
+				F7DD93D81DA8D6F70025C1F1 /* Frameworks */,
+				F7DD93D91DA8D6F70025C1F1 /* Resources */,
+				39B07742E49087DF6F7C601F /* [CP] Embed Pods Frameworks */,
+				6300FF9C999CA3B4AAFFA10A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XZScrollBarViewController;
+			productName = XZScrollBarViewController;
+			productReference = F7DD93DB1DA8D6F70025C1F1 /* XZScrollBarViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7DD93D31DA8D6F70025C1F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = coderXu;
+				TargetAttributes = {
+					F7DD93DA1DA8D6F70025C1F1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XLF7GFKUG4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F7DD93D61DA8D6F70025C1F1 /* Build configuration list for PBXProject "XZScrollBarViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7DD93D21DA8D6F70025C1F1;
+			productRefGroup = F7DD93DC1DA8D6F70025C1F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7DD93DA1DA8D6F70025C1F1 /* XZScrollBarViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7DD93D91DA8D6F70025C1F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DD93EE1DA8D6F70025C1F1 /* LaunchScreen.storyboard in Resources */,
+				F7DD93EB1DA8D6F70025C1F1 /* Assets.xcassets in Resources */,
+				F7DD93E91DA8D6F70025C1F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39B07742E49087DF6F7C601F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XZScrollBarViewController/Pods-XZScrollBarViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6300FF9C999CA3B4AAFFA10A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XZScrollBarViewController/Pods-XZScrollBarViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88DAFE01F64DC46154D38335 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7DD93D71DA8D6F70025C1F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7104EEE1DA8DF9E00032859 /* UIView+XZExtension.m in Sources */,
+				F7DD93E31DA8D6F70025C1F1 /* AppDelegate.m in Sources */,
+				F7DD93E01DA8D6F70025C1F1 /* main.m in Sources */,
+				F7F0EE391DA9000C00B3626B /* MainViewController.m in Sources */,
+				F7DD93F71DA8D7710025C1F1 /* MainTableViewController.m in Sources */,
+				F7104EEA1DA8DD4700032859 /* MSYOrderManagerViewController.m in Sources */,
+				F7104EF11DA8EE2200032859 /* XZTopic.m in Sources */,
+				F7104EF71DA8F5B400032859 /* MSYHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7DD93E71DA8D6F70025C1F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7DD93E81DA8D6F70025C1F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7DD93EC1DA8D6F70025C1F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7DD93ED1DA8D6F70025C1F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7DD93F01DA8D6F70025C1F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F7DD93F11DA8D6F70025C1F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7DD93F31DA8D6F70025C1F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8607DCBBB9746E74214C62CE /* Pods-XZScrollBarViewController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XLF7GFKUG4;
+				INFOPLIST_FILE = XZScrollBarViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coderXu.github.io.XZScrollBarViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Debug;
+		};
+		F7DD93F41DA8D6F70025C1F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD36B6A5240C3AE8903AAB7B /* Pods-XZScrollBarViewController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XLF7GFKUG4;
+				INFOPLIST_FILE = XZScrollBarViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coderXu.github.io.XZScrollBarViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7DD93D61DA8D6F70025C1F1 /* Build configuration list for PBXProject "XZScrollBarViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DD93F01DA8D6F70025C1F1 /* Debug */,
+				F7DD93F11DA8D6F70025C1F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DD93F21DA8D6F70025C1F1 /* Build configuration list for PBXNativeTarget "XZScrollBarViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DD93F31DA8D6F70025C1F1 /* Debug */,
+				F7DD93F41DA8D6F70025C1F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7DD93D31DA8D6F70025C1F1 /* Project object */;
+}
