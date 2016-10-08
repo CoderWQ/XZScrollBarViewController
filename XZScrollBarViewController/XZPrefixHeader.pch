@@ -1,0 +1,25 @@
+//
+//  XZPrefixHeader.pch
+//  XZScrollBarViewController
+//
+//  Created by 徐文强 on 16/10/8.
+//  Copyright © 2016年 coderXu. All rights reserved.
+//
+
+#ifndef XZPrefixHeader_pch
+#define XZPrefixHeader_pch
+
+// 如果是OC
+#ifdef __OBJC__
+
+ 
+#define XZColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define XZColor(r, g, b) XZColorA((r), (g), (b), 255)
+#define XZRandomColor XZColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
+
+#import "UIView+XZExtension.h"
+
+
+#endif
+#endif /* XZPrefixHeader_pch */

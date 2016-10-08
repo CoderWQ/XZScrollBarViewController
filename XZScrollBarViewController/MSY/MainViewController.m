@@ -8,11 +8,7 @@
 
 #import "MainViewController.h"
 #import "MSYOrderManagerViewController.h"
-#import "UIView+XZExtension.h"
-#define XZColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
-#define XZColor(r, g, b) XZColorA((r), (g), (b), 255)
-#define XZRandomColor XZColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
-
+ 
 @interface MainViewController ()<UIScrollViewDelegate>
 /** 当前选中的标题按钮 */
 @property (nonatomic, weak) UIButton *selectedTitleButton;

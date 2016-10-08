@@ -7,7 +7,6 @@
 //
 
 #import "MSYHeaderView.h"
-#import "UIView+XZExtension.h"
 @interface MSYHeaderView()
 
 

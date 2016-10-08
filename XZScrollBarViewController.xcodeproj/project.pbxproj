@@ -33,6 +33,7 @@
 		F7104EF01DA8EE2200032859 /* XZTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTopic.m; sourceTree = "<group>"; };
 		F7104EF51DA8F5B400032859 /* MSYHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSYHeaderView.h; sourceTree = "<group>"; };
 		F7104EF61DA8F5B400032859 /* MSYHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSYHeaderView.m; sourceTree = "<group>"; };
+		F7C396351DA9343E0095C607 /* XZPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPrefixHeader.pch; sourceTree = "<group>"; };
 		F7DD93DB1DA8D6F70025C1F1 /* XZScrollBarViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZScrollBarViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DD93DF1DA8D6F70025C1F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7DD93E11DA8D6F70025C1F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 				F7DD93EA1DA8D6F70025C1F1 /* Assets.xcassets */,
 				F7DD93EC1DA8D6F70025C1F1 /* LaunchScreen.storyboard */,
 				F7DD93EF1DA8D6F70025C1F1 /* Info.plist */,
+				F7C396351DA9343E0095C607 /* XZPrefixHeader.pch */,
 				F7DD93DE1DA8D6F70025C1F1 /* Supporting Files */,
 			);
 			path = XZScrollBarViewController;
@@ -394,6 +396,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XLF7GFKUG4;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = XZScrollBarViewController/XZPrefixHeader.pch;
 				INFOPLIST_FILE = XZScrollBarViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coderXu.github.io.XZScrollBarViewController;
@@ -408,6 +412,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XLF7GFKUG4;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = XZScrollBarViewController/XZPrefixHeader.pch;
 				INFOPLIST_FILE = XZScrollBarViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coderXu.github.io.XZScrollBarViewController;
