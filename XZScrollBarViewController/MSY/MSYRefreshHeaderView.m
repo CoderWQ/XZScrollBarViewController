@@ -6,13 +6,13 @@
 //  Copyright © 2016年 coderXu. All rights reserved.
 //
 
-#import "MSYHeaderView.h"
-@interface MSYHeaderView()
+#import "MSYRefreshHeaderView.h"
+@interface MSYRefreshHeaderView()
 
 
 @end
 
-@implementation MSYHeaderView
+@implementation MSYRefreshHeaderView
 
 // 重写初始化
 - (void)prepare
@@ -25,9 +25,11 @@
     [self setTitle:@"赶紧松开吧" forState:MJRefreshStatePulling];
     [self setTitle:@"正在加载数据..." forState:MJRefreshStateRefreshing];
 
+    
+    
     [self addSubview:[[UISwitch alloc] init]];
     
- 
+    self.automaticallyChangeAlpha = YES;
     
 }
 

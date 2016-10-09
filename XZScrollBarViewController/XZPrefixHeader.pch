@@ -18,6 +18,29 @@
 #define XZRandomColor XZColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
 
 
+
+/*** 将服务器返回的数据写入plist ***/
+#define XZWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"/Users/coderxu/Desktop/服务器打印/%@.plist", filename] atomically:YES];
+
+//打印输出
+#ifdef DEBUG
+
+
+#define XZDetailLOG(...) printf("打印时间:%s\n文件名称:%s\n方法名称:%s---->所在行数:%d\n打印日志:%s\n\n",[[NSString stringWithFormat:@"%@",[NSDate date]] UTF8String],__FILE__,__func__,__LINE__,[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+
+
+#define XZLOG(...) printf("打印时间:%s\n方法名称:%s---->所在行数:%d\n打印日志:%s\n\n",[[NSString stringWithFormat:@"%@",[NSDate date]] UTF8String],__func__,__LINE__,[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+#define XZLOG_CURRENT_METHOD NSLog(@"%@-%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd))
+
+#else
+
+#define XZLOG(...) ;
+#define XZLOG_CURRENT_METHOD ;
+
+#endif
+//LOG(@"已经与服务器断开,正在重新连接 时间：%@",[NSDate date]
+
+
 #import "UIView+XZExtension.h"
 
 

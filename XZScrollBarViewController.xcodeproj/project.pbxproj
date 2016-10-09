@@ -11,7 +11,8 @@
 		F7104EEA1DA8DD4700032859 /* MSYOrderManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7104EE91DA8DD4700032859 /* MSYOrderManagerViewController.m */; };
 		F7104EEE1DA8DF9E00032859 /* UIView+XZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F7104EED1DA8DF9E00032859 /* UIView+XZExtension.m */; };
 		F7104EF11DA8EE2200032859 /* XZTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = F7104EF01DA8EE2200032859 /* XZTopic.m */; };
-		F7104EF71DA8F5B400032859 /* MSYHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7104EF61DA8F5B400032859 /* MSYHeaderView.m */; };
+		F7104EF71DA8F5B400032859 /* MSYRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7104EF61DA8F5B400032859 /* MSYRefreshHeaderView.m */; };
+		F71647CE1DA9CF5B0047CE18 /* MSYRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F71647CD1DA9CF5B0047CE18 /* MSYRefreshFooterView.m */; };
 		F7DD93E01DA8D6F70025C1F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DD93DF1DA8D6F70025C1F1 /* main.m */; };
 		F7DD93E31DA8D6F70025C1F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DD93E21DA8D6F70025C1F1 /* AppDelegate.m */; };
 		F7DD93E91DA8D6F70025C1F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DD93E71DA8D6F70025C1F1 /* Main.storyboard */; };
@@ -31,8 +32,10 @@
 		F7104EED1DA8DF9E00032859 /* UIView+XZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XZExtension.m"; sourceTree = "<group>"; };
 		F7104EEF1DA8EE2200032859 /* XZTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTopic.h; sourceTree = "<group>"; };
 		F7104EF01DA8EE2200032859 /* XZTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTopic.m; sourceTree = "<group>"; };
-		F7104EF51DA8F5B400032859 /* MSYHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSYHeaderView.h; sourceTree = "<group>"; };
-		F7104EF61DA8F5B400032859 /* MSYHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSYHeaderView.m; sourceTree = "<group>"; };
+		F7104EF51DA8F5B400032859 /* MSYRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSYRefreshHeaderView.h; sourceTree = "<group>"; };
+		F7104EF61DA8F5B400032859 /* MSYRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSYRefreshHeaderView.m; sourceTree = "<group>"; };
+		F71647CC1DA9CF5B0047CE18 /* MSYRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSYRefreshFooterView.h; sourceTree = "<group>"; };
+		F71647CD1DA9CF5B0047CE18 /* MSYRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSYRefreshFooterView.m; sourceTree = "<group>"; };
 		F7C396351DA9343E0095C607 /* XZPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPrefixHeader.pch; sourceTree = "<group>"; };
 		F7DD93DB1DA8D6F70025C1F1 /* XZScrollBarViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZScrollBarViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DD93DF1DA8D6F70025C1F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,8 +89,10 @@
 				F7104EE91DA8DD4700032859 /* MSYOrderManagerViewController.m */,
 				F7104EEF1DA8EE2200032859 /* XZTopic.h */,
 				F7104EF01DA8EE2200032859 /* XZTopic.m */,
-				F7104EF51DA8F5B400032859 /* MSYHeaderView.h */,
-				F7104EF61DA8F5B400032859 /* MSYHeaderView.m */,
+				F7104EF51DA8F5B400032859 /* MSYRefreshHeaderView.h */,
+				F7104EF61DA8F5B400032859 /* MSYRefreshHeaderView.m */,
+				F71647CC1DA9CF5B0047CE18 /* MSYRefreshFooterView.h */,
+				F71647CD1DA9CF5B0047CE18 /* MSYRefreshFooterView.m */,
 			);
 			path = MSY;
 			sourceTree = "<group>";
@@ -276,7 +281,8 @@
 				F7DD93F71DA8D7710025C1F1 /* MainTableViewController.m in Sources */,
 				F7104EEA1DA8DD4700032859 /* MSYOrderManagerViewController.m in Sources */,
 				F7104EF11DA8EE2200032859 /* XZTopic.m in Sources */,
-				F7104EF71DA8F5B400032859 /* MSYHeaderView.m in Sources */,
+				F71647CE1DA9CF5B0047CE18 /* MSYRefreshFooterView.m in Sources */,
+				F7104EF71DA8F5B400032859 /* MSYRefreshHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

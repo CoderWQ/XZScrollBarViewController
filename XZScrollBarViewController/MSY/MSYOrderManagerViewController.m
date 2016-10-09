@@ -12,23 +12,39 @@
 #import "MJExtension.h"
 #import "UIImageView+WebCache.h"
 #import "MJRefresh.h"
-#import "MSYHeaderView.h"
+#import "MSYRefreshHeaderView.h"
+#import "MSYRefreshFooterView.h"
 
 
 @interface MSYOrderManagerViewController ()
 /** 所有的帖子数据 */
-@property (nonatomic, strong) NSArray<XZTopic *> *topics;
+@property (nonatomic, strong) NSMutableArray<XZTopic *> *topics;
 
 /** 下拉刷新的提示文字 */
 @property (nonatomic, weak) UILabel *label;
 /** maxtime : 用来加载下一页数据 */
 @property (nonatomic, copy) NSString *maxtime;
+
+/** 任务管理者 */
+@property (nonatomic, strong) AFHTTPSessionManager *manager;
+
 @end
 
 @implementation MSYOrderManagerViewController
 
+- (AFHTTPSessionManager *)manager
+{
+    if (_manager == nil) {
+        _manager = [AFHTTPSessionManager manager];
+    }
+    return _manager;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
+ 
+    
+    
    
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 
@@ -46,15 +62,24 @@
   
 
     
-    self.tableView.mj_header = [MSYHeaderView headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
+    self.tableView.mj_header = [MSYRefreshHeaderView headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
     [self.tableView.mj_header beginRefreshing];
         
-//        self.tableView.mj_footer = [MSYHeaderView footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
-   
+        self.tableView.mj_footer = [MSYRefreshFooterView footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
+    
 }
 
 #pragma mark - 数据加载
 - (void)loadNewTopics{
+    
+//
+//    for (NSURLSessionTask *task in  self.manager.tasks) {
+//        [task cancel];
+//    }
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+
+ //
+    
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
@@ -75,14 +100,64 @@
         // 让[刷新控件]结束刷新
         [self.tableView.mj_header endRefreshing];;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"请求失败 - %@", error);
+        
+        if (error.code == NSURLErrorCancelled) {
+            // 取消了任务
+        }else{
+            // 是其他错误
+        }
+//        XZLOG(@"请求失败 - %@", error);
+
+        
         
         // 让[刷新控件]结束刷新
         [self.tableView.mj_header endRefreshing];
     }];
 }
-#pragma mark - Table view data source
- 
+// 一个请求任务被取消了(cancel), 会自动调用AFN请求的failure这个block
+
+-(void)loadMoreTopics{
+    
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+
+    // 参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"list";
+    params[@"c"] = @"data";
+    params[@"maxtime"] = self.maxtime;
+    
+    
+    // 发送请求
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        // 存储这页对应的maxtime
+        self.maxtime = responseObject[@"info"][@"maxtime"];
+        
+        // 字典数组 -> 模型数组
+        NSArray<XZTopic *> *moreTopics = [XZTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        [self.topics addObjectsFromArray:moreTopics];
+        
+        // 刷新表格
+        [self.tableView reloadData];
+        
+        // 让[刷新控件]结束刷新
+        [self.tableView.mj_footer endRefreshing];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+       
+        
+        
+        
+        
+        
+ //        XZLOG(@"%@",);
+//        XZLOG(@"请求失败 - %@", error);
+        
+          // 让[刷新控件]结束刷新
+        [self.tableView.mj_footer endRefreshing];
+    }];
+
+}
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
  
     return self.topics.count;

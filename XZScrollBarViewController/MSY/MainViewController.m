@@ -25,6 +25,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    
+    XZLOG(@"2");
+           
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self setupChildViewControllers];
@@ -96,7 +99,7 @@
 {
     // 标题栏
     UIView *titlesView = [[UIView alloc] init];
-    titlesView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:1];
+    titlesView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
     titlesView.frame = CGRectMake(0, 64, self.view.xz_width, 35);
     [self.view addSubview:titlesView];
     self.titlesView = titlesView;
@@ -111,6 +114,7 @@
     for (NSUInteger i = 0; i < count; i++) {
         // 创建
         UIButton *titleButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        titleButton.showsTouchWhenHighlighted = NO;
         titleButton.tag = i;
         [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
         [titlesView addSubview:titleButton];
