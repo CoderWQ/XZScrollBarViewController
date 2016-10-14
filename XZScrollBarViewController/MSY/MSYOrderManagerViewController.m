@@ -14,7 +14,8 @@
 #import "MJRefresh.h"
 #import "MSYRefreshHeaderView.h"
 #import "MSYRefreshFooterView.h"
-
+#import "XZTopicViewCell.h"
+#import "XZVoiceCell.h"
 
 @interface MSYOrderManagerViewController ()
 /** 所有的帖子数据 */
@@ -43,9 +44,6 @@
     [super viewDidLoad];
    
  
-    
-    
-   
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 
     self.view.backgroundColor = [UIColor whiteColor];
@@ -54,7 +52,13 @@
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
  
     [self setupRefresh];
-
+    
+    
+    // 要么分开弄
+    [self.tableView registerClass:[XZVoiceCell class] forCellReuseIdentifier:@"XZVoiceCell"];
+    // 要么就一个cell
+    
+    
 }
 
 - (void)setupRefresh
@@ -64,8 +68,8 @@
     
     self.tableView.mj_header = [MSYRefreshHeaderView headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
     [self.tableView.mj_header beginRefreshing];
-        
-        self.tableView.mj_footer = [MSYRefreshFooterView footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
+    
+    self.tableView.mj_footer = [MSYRefreshFooterView footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
     
 }
 

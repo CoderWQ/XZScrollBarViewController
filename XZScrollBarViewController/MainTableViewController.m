@@ -8,6 +8,7 @@
 
 #import "MainTableViewController.h"
 #import "MainViewController.h"
+#import "JRTTViewController.h"
 @interface MainTableViewController ()
 
 @property(nonatomic,strong)NSArray *dataArray;
@@ -53,8 +54,10 @@
 {
 //    if (indexPath.row == 0) {
     
-        MainViewController *mainVc = [[MainViewController alloc] init];
-        [self.navigationController pushViewController:mainVc animated:YES];
+    JRTTViewController *mainVc = [[JRTTViewController alloc] init];
+    
+//        MainViewController *mainVc = [[MainViewController alloc] init];
+    [self.navigationController pushViewController:mainVc animated:YES];
 //    }
 }
 

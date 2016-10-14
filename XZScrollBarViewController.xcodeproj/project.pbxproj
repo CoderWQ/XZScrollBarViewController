@@ -13,12 +13,19 @@
 		F7104EF11DA8EE2200032859 /* XZTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = F7104EF01DA8EE2200032859 /* XZTopic.m */; };
 		F7104EF71DA8F5B400032859 /* MSYRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7104EF61DA8F5B400032859 /* MSYRefreshHeaderView.m */; };
 		F71647CE1DA9CF5B0047CE18 /* MSYRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F71647CD1DA9CF5B0047CE18 /* MSYRefreshFooterView.m */; };
+		F7DC16BF1DAC7DF50082C277 /* JRTTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DC16BE1DAC7DF50082C277 /* JRTTViewController.m */; };
+		F7DC16C31DAC7F580082C277 /* ChildTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DC16C21DAC7F580082C277 /* ChildTableViewController.m */; };
+		F7DC16C61DACC5540082C277 /* XZFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DC16C51DACC5540082C277 /* XZFlowLayout.m */; };
 		F7DD93E01DA8D6F70025C1F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DD93DF1DA8D6F70025C1F1 /* main.m */; };
 		F7DD93E31DA8D6F70025C1F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DD93E21DA8D6F70025C1F1 /* AppDelegate.m */; };
 		F7DD93E91DA8D6F70025C1F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DD93E71DA8D6F70025C1F1 /* Main.storyboard */; };
 		F7DD93EB1DA8D6F70025C1F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DD93EA1DA8D6F70025C1F1 /* Assets.xcassets */; };
 		F7DD93EE1DA8D6F70025C1F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DD93EC1DA8D6F70025C1F1 /* LaunchScreen.storyboard */; };
 		F7DD93F71DA8D7710025C1F1 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DD93F61DA8D7710025C1F1 /* MainTableViewController.m */; };
+		F7EFCE1F1DAB2C2A0099E4EF /* XZVoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EFCE1E1DAB2C2A0099E4EF /* XZVoiceCell.m */; };
+		F7EFCE221DAB2C380099E4EF /* XZTopicViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EFCE211DAB2C380099E4EF /* XZTopicViewCell.m */; };
+		F7EFCE271DAB7B040099E4EF /* XZScrollBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EFCE261DAB7B040099E4EF /* XZScrollBarViewController.m */; };
+		F7EFCE2A1DAB7C9B0099E4EF /* XZScrollBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EFCE291DAB7C9B0099E4EF /* XZScrollBarButton.m */; };
 		F7F0EE391DA9000C00B3626B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F0EE381DA9000C00B3626B /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +44,12 @@
 		F71647CC1DA9CF5B0047CE18 /* MSYRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSYRefreshFooterView.h; sourceTree = "<group>"; };
 		F71647CD1DA9CF5B0047CE18 /* MSYRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSYRefreshFooterView.m; sourceTree = "<group>"; };
 		F7C396351DA9343E0095C607 /* XZPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZPrefixHeader.pch; sourceTree = "<group>"; };
+		F7DC16BD1DAC7DF50082C277 /* JRTTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTTViewController.h; sourceTree = "<group>"; };
+		F7DC16BE1DAC7DF50082C277 /* JRTTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTTViewController.m; sourceTree = "<group>"; };
+		F7DC16C11DAC7F580082C277 /* ChildTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildTableViewController.h; sourceTree = "<group>"; };
+		F7DC16C21DAC7F580082C277 /* ChildTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildTableViewController.m; sourceTree = "<group>"; };
+		F7DC16C41DACC5540082C277 /* XZFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZFlowLayout.h; sourceTree = "<group>"; };
+		F7DC16C51DACC5540082C277 /* XZFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZFlowLayout.m; sourceTree = "<group>"; };
 		F7DD93DB1DA8D6F70025C1F1 /* XZScrollBarViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZScrollBarViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DD93DF1DA8D6F70025C1F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7DD93E11DA8D6F70025C1F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,6 +60,15 @@
 		F7DD93EF1DA8D6F70025C1F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7DD93F51DA8D7710025C1F1 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		F7DD93F61DA8D7710025C1F1 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		F7EFCE1D1DAB2C2A0099E4EF /* XZVoiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZVoiceCell.h; sourceTree = "<group>"; };
+		F7EFCE1E1DAB2C2A0099E4EF /* XZVoiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZVoiceCell.m; sourceTree = "<group>"; };
+		F7EFCE201DAB2C380099E4EF /* XZTopicViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTopicViewCell.h; sourceTree = "<group>"; };
+		F7EFCE211DAB2C380099E4EF /* XZTopicViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTopicViewCell.m; sourceTree = "<group>"; };
+		F7EFCE251DAB7B040099E4EF /* XZScrollBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZScrollBarViewController.h; sourceTree = "<group>"; };
+		F7EFCE261DAB7B040099E4EF /* XZScrollBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZScrollBarViewController.m; sourceTree = "<group>"; };
+		F7EFCE281DAB7C9B0099E4EF /* XZScrollBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZScrollBarButton.h; sourceTree = "<group>"; };
+		F7EFCE291DAB7C9B0099E4EF /* XZScrollBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZScrollBarButton.m; sourceTree = "<group>"; };
+		F7EFCE2B1DAB7DDF0099E4EF /* XZScrollBarViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZScrollBarViewHeader.h; sourceTree = "<group>"; };
 		F7F0EE371DA9000C00B3626B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F7F0EE381DA9000C00B3626B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +115,10 @@
 				F7104EF61DA8F5B400032859 /* MSYRefreshHeaderView.m */,
 				F71647CC1DA9CF5B0047CE18 /* MSYRefreshFooterView.h */,
 				F71647CD1DA9CF5B0047CE18 /* MSYRefreshFooterView.m */,
+				F7EFCE201DAB2C380099E4EF /* XZTopicViewCell.h */,
+				F7EFCE211DAB2C380099E4EF /* XZTopicViewCell.m */,
+				F7EFCE1D1DAB2C2A0099E4EF /* XZVoiceCell.h */,
+				F7EFCE1E1DAB2C2A0099E4EF /* XZVoiceCell.m */,
 			);
 			path = MSY;
 			sourceTree = "<group>";
@@ -104,6 +130,25 @@
 				F7104EED1DA8DF9E00032859 /* UIView+XZExtension.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		F7DC16BC1DAC7DDB0082C277 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F7DC16C01DAC7F480082C277 /* ChildVc */,
+				F7DC16BD1DAC7DF50082C277 /* JRTTViewController.h */,
+				F7DC16BE1DAC7DF50082C277 /* JRTTViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		F7DC16C01DAC7F480082C277 /* ChildVc */ = {
+			isa = PBXGroup;
+			children = (
+				F7DC16C11DAC7F580082C277 /* ChildTableViewController.h */,
+				F7DC16C21DAC7F580082C277 /* ChildTableViewController.m */,
+			);
+			path = ChildVc;
 			sourceTree = "<group>";
 		};
 		F7DD93D21DA8D6F70025C1F1 = {
@@ -127,6 +172,8 @@
 		F7DD93DD1DA8D6F70025C1F1 /* XZScrollBarViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F7DC16BC1DAC7DDB0082C277 /* Demo */,
+				F7EFCE241DAB7A240099E4EF /* XZScrollBarViewController */,
 				F7104EEB1DA8DF8300032859 /* Category */,
 				F7104EE41DA8DA2E00032859 /* MSY */,
 				F7DD93E11DA8D6F70025C1F1 /* AppDelegate.h */,
@@ -149,6 +196,20 @@
 				F7DD93DF1DA8D6F70025C1F1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7EFCE241DAB7A240099E4EF /* XZScrollBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F7EFCE2B1DAB7DDF0099E4EF /* XZScrollBarViewHeader.h */,
+				F7EFCE251DAB7B040099E4EF /* XZScrollBarViewController.h */,
+				F7EFCE261DAB7B040099E4EF /* XZScrollBarViewController.m */,
+				F7EFCE281DAB7C9B0099E4EF /* XZScrollBarButton.h */,
+				F7EFCE291DAB7C9B0099E4EF /* XZScrollBarButton.m */,
+				F7DC16C41DACC5540082C277 /* XZFlowLayout.h */,
+				F7DC16C51DACC5540082C277 /* XZFlowLayout.m */,
+			);
+			path = XZScrollBarViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,13 +335,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7DC16BF1DAC7DF50082C277 /* JRTTViewController.m in Sources */,
+				F7DC16C61DACC5540082C277 /* XZFlowLayout.m in Sources */,
 				F7104EEE1DA8DF9E00032859 /* UIView+XZExtension.m in Sources */,
 				F7DD93E31DA8D6F70025C1F1 /* AppDelegate.m in Sources */,
 				F7DD93E01DA8D6F70025C1F1 /* main.m in Sources */,
 				F7F0EE391DA9000C00B3626B /* MainViewController.m in Sources */,
+				F7EFCE221DAB2C380099E4EF /* XZTopicViewCell.m in Sources */,
 				F7DD93F71DA8D7710025C1F1 /* MainTableViewController.m in Sources */,
+				F7DC16C31DAC7F580082C277 /* ChildTableViewController.m in Sources */,
 				F7104EEA1DA8DD4700032859 /* MSYOrderManagerViewController.m in Sources */,
+				F7EFCE271DAB7B040099E4EF /* XZScrollBarViewController.m in Sources */,
+				F7EFCE1F1DAB2C2A0099E4EF /* XZVoiceCell.m in Sources */,
 				F7104EF11DA8EE2200032859 /* XZTopic.m in Sources */,
+				F7EFCE2A1DAB7C9B0099E4EF /* XZScrollBarButton.m in Sources */,
 				F71647CE1DA9CF5B0047CE18 /* MSYRefreshFooterView.m in Sources */,
 				F7104EF71DA8F5B400032859 /* MSYRefreshHeaderView.m in Sources */,
 			);

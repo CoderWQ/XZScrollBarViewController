@@ -22,6 +22,9 @@
 /*** 将服务器返回的数据写入plist ***/
 #define XZWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"/Users/coderxu/Desktop/服务器打印/%@.plist", filename] atomically:YES];
 
+
+
+
 //打印输出
 #ifdef DEBUG
 
@@ -30,7 +33,14 @@
 
 
 #define XZLOG(...) printf("打印时间:%s\n方法名称:%s---->所在行数:%d\n打印日志:%s\n\n",[[NSString stringWithFormat:@"%@",[NSDate date]] UTF8String],__func__,__LINE__,[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+
+
 #define XZLOG_CURRENT_METHOD NSLog(@"%@-%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd))
+
+
+#define NSLogRect(view) NSLog(@"Rect is %@",NSStringFromCGRect(view.frame));
+
+
 
 #else
 
